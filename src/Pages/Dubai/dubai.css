@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.dubai {
+  padding: 48px 60px;
+  width: max-content;
+  margin: 0 auto;
+}
+.dubai h1 {
+  font-size: 28px;
+  font-weight: 600;
+  font-style: SemiBold;
+  line-height: 150%;
+  letter-spacing: 0px;
+  margin-bottom: 20px;
+}
+.firstCont {
+  background-color: white;
+  box-shadow: 0px 4px 20px 0px rgba(238, 238, 238, 0.5);
+  display: flex;
+  padding: 24px;
+  gap: 48px;
+  border-radius: 28px;
+  width: max-content;
+}
+.inerCont {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  min-height: 107px;
+  display: flex;
+  flex-direction: column;
+}
+.dataRange {
+  display: flex;
+  margin-top: 32px;
+  gap: 30px;
+  font-size: 16px;
+  font-style: medium;
+  font-weight: 500;
+}
+.range {
+  border: 1px solid transparent;
+  padding: 11px 41px;
+  border-radius: 34px;
+  background-color: rgba(247, 249, 255, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease;
+}
+.activeRange {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 41px;
+  border-radius: 34px;
+  border: 1px solid rgba(209, 45, 52, 1);
+  font-weight: 700;
+  font-style: bold;
+  background-color: rgba(254, 242, 243, 1);
+  color: rgba(209, 45, 52, 1);
+}
+
+.range:hover {
+  border: 1px solid rgba(209, 45, 52, 1);
+  background-color: rgba(254, 242, 243, 1);
+  color: rgba(209, 45, 52, 1);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.selectMark {
+  font-size: 16px;
+  font-style: medium;
+  font-weight: 500;
+  margin-top: 32px;
+  display: flex;
+  gap: 30px;
+}
+.secondCont {
+  margin: 20px auto;
+  display: flex;
+  gap: 30px;
+  width: max-content;
+}
+.infoCont {
+  min-height: 190px;
+  min-width: 435px;
+  background-color: white;
+  box-shadow: 0px 4px 20px 0px rgba(238, 238, 238, 0.5);
+  border-radius: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 3px;
+}
+.infoContStat {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: rgba(54, 51, 82, 1);
+}
+.infoCont span {
+  color: rgba(102, 100, 120, 1);
+  font-weight: 500;
+  font-size: 18px;
+  vertical-align: middle;
+}
+.yoy p:first-child {
+  position: relative;
+  color: rgba(60, 178, 136, 1);
+  padding: 4px 8px 4px 28px;
+  border-radius: 20px;
+  background-color: rgba(85, 212, 167, 0.1);
+}
+.yoy p:first-child::before {
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+  border-bottom: 11px solid rgba(60, 178, 136, 1);
+}
+.yoy p:last-child {
+  color: rgba(54, 51, 82, 1);
+}
+.yoy p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 100%;
+}
+.yoy {
+  margin: 15px auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.thirdCont {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.charts {
+  flex: 1;
+  background-color: white;
+  box-shadow: 0px 4px 20px 0px rgba(238, 238, 238, 0.5);
+  border-radius: 28px;
+  padding: 24px;
+}
+.pie {
+  flex: 1;
+  max-width: 32%;
+  background-color: white;
+  box-shadow: 0px 4px 20px 0px rgba(238, 238, 238, 0.5);
+  border-radius: 28px;
+  padding: 28px;
+}
+.chartHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 28px;
+}
+.leftTitle {
+  text-align: left;
+  font-size: 18px;
+  font-weight: 600;
+  font-style: SemiBold;
+}
+.centerTitle {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: medium;
+  gap: 40px;
+}
+.redDot {
+  margin-left: -23px;
+  padding-left: 23px;
+  position: relative;
+}
+.redDot:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 49%;
+  background-color: rgba(209, 45, 52, 1);
+  width: 15px;
+  height: 15px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+.greenDot {
+  padding-left: 23px;
+  position: relative;
+}
+
+.greenDot:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 49%;
+  background-color: rgba(40, 153, 145, 1);
+  width: 15px;
+  height: 15px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+.inputs {
+  margin-top: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 60px;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: medium;
+}
+.checkVal {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.checkVal label:hover {
+  cursor: pointer;
+}
+.custom-radio {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: none;
+  width: 18px;
+  height: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.3s;
+  border-radius: 50%;
+  border: 1px solid rgba(202, 202, 202, 1);
+}
+
+.custom-radio:checked {
+  width: 19px;
+  height: 19px;
+  background-color: rgba(209, 45, 52, 1);
+}
+
+.custom-radio::before {
+  content: "";
+}
+
+.custom-radio:checked::before {
+  content: "✓";
+  color: white;
+  border: none;
+}
+@media (max-width: 480px) {
+  .firstCont {
+    margin: 0 auto;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .dubai {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+  .dubai h1 {
+    margin: 0 auto;
+  }
+  .dataRange {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .selectMark {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .secondCont {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .thirdCont {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .infoCont {
+    min-width: 300px;
+  }
+  .infoContStat {
+    font-size: 40px;
+  }
+  .charts {
+    overflow: hidden;
+    width: 300px;
+    overflow-x: scroll;
+  }
+  .inputs {
+    gap: 10px;
+    margin: 10px auto;
+  }
+  .pie {
+    max-width: 100%;
+    overflow: hidden;
+    width: 300px;
+    overflow-x: scroll;
+    padding: 5px;
+  }
+}
