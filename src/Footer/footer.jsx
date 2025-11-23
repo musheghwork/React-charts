@@ -12,7 +12,7 @@ function Footer() {
   }
 
   return (
-    <>
+    <div className="bg">
       <div className="footer">
         <h1>Top 10 Trending Locations and Sales History - Last 30 Days </h1>
         <div className="ratings">
@@ -43,7 +43,7 @@ function Footer() {
           <p>© {new Date().getFullYear()} Broker Terminal, Inc.</p>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 export default Footer;
