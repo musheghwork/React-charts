@@ -1,13 +1,13 @@
-import { useState } from 'react'
-import './App.css'
-import Home from './Pages/Home/home'
-import Property from './Pages/Property/property'
-import NavBar from './NavBar/navBar'
-import Footer from './Footer/footer'
-import Dubai from './Pages/Dubai/dubai';
-import News from './Pages/News/news';
-import About from './Pages/About/about';
-import MobileNavBar from './NavBar/mobileNavBar'
+import { useState } from "react";
+import "./App.css";
+import Home from "./Pages/Home/home";
+import Property from "./Pages/Property/property";
+import NavBar from "./NavBar/navBar";
+import Footer from "./Footer/footer";
+import Dubai from "./Pages/Dubai/dubai";
+import News from "./Pages/News/news";
+import About from "./Pages/About/about";
+import MobileNavBar from "./NavBar/mobileNavBar";
 
 function App() {
   const [activPage, setActivePage] = useState("dubai");
@@ -32,9 +32,9 @@ function App() {
     <div className="app">
       <NavBar activPage={activPage} setActivePage={setActivePage} />
       <MobileNavBar activPage={activPage} setActivePage={setActivePage} />
-       {renderPage()}
-      <Footer /> 
+      {renderPage()}
+      <Footer />
     </div>
   );
 }
-export default App
+export default App;

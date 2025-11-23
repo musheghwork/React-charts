@@ -3,6 +3,7 @@
   background-color: #39393d;
   width: max-content;
   margin: 0 auto;
+  min-width: 300px;
 }
 .footer h1 {
   color: #fefeff;
@@ -70,7 +71,7 @@
   height: 35px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .footer {
     padding: 10px 10px;
   }

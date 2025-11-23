@@ -139,7 +139,7 @@ body {
   transform: translateY(0);
   pointer-events: auto;
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .navList {
     display: none;
   }
